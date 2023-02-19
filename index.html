@@ -28,15 +28,16 @@ https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
 <!--Added my name to the authors of contribution, brief description of code, and known issues.-->
-<head> 
+
+   <head> <!--Noticed that the indentation for head and ending head was off.-->
 	<title>Hello World</title>  
 	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--Noticed a bracket that was randomly placed.-->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<link rel="stylesheet" href="w3.css">
 	<link rel="stylesheet" href="w3-colors-flat.css">
-</head> 
+   </head> 
 
-<script>
+<script> 
 
 	var necessary_trip = 0; //Variable for seeing the dentist.
 	var unnecessary_trip = 0; //Variable for not seeing the dentist.
@@ -53,7 +54,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	};
 	  
-
   </script>	
 
 
@@ -112,6 +112,38 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     <div class"w3-container w3-flat-carrot"> <!--Added a div class for the w3 container w3-flat-carrot.-->
         <h1>Question 2</h1> <!--Question 2 header.-->
     </div>
+    
+    <div id="content" class="w3-container"> <!--JavaScript event.-->
+        <p>Have you noticed any bleeding when brushing or flossing your teeth?</p> <!--Second question.-->
+        <a href="#three" onclick="necessary_tripAdd();" class="w3-btn w3-black"> Yes</a> <!--I created a black yes button that would add to the necessary count and direct the user to the fourth page-->
+        <a href="#three" onclick="unnecesary_tripAdd();" class="w3-btn w3-black"> No</a> <!--I created a black yes button that would add to the unnecessary count and direct the user to the fourth page-->
+    </div> 
+    
+</div>
+
+<div class="page" id="three"> <!--Assigning style class to a div-->
+    <div class"w3-container w3-flat-carrot"> <!--Added a div class for the w3 container w3-flat-carrot.-->
+        <h1>Question 3</h1> <!--Question 3 header.-->
+    </div>
+    
+    <div id="content" class="w3-container"> <!--JavaScript event.-->
+        <p>Do you have any loose teeth or gaps between your teeth?</p> <!--Third question.-->
+        <a href="#four" onclick="necessary_tripAdd();" class="w3-btn w3-black"> Yes</a> <!--I created a black yes button that would add to the necessary count and direct the user to the fifth page-->
+        <a href="#four" onclick="unnecesary_tripAdd();" class="w3-btn w3-black"> No</a> <!--I created a black yes button that would add to the unnecessary count and direct the user to the fifth page-->
+    </div> 
+    
+</div>
+
+<div class="page" id="four"> <!--Assigning style class to a div-->
+    <div class"w3-container w3-flat-carrot"> <!--Added a div class for the w3 container w3-flat-carrot.-->
+        <h1>Question 4</h1> <!--Question 4 header.-->
+    </div>
+    
+    <div id="content" class="w3-container"> <!--JavaScript event.-->
+        <p>Have you experienced any sensitivity to hot or cold foods or drinks?</p> <!--Fourth question.-->
+        <a href="#results" onclick="necessary_tripAdd();" class="w3-btn w3-black"> Yes</a> <!--I created a black yes button that would add to the necessary count and direct the user to the sixth page-->
+        <a href="#results" onclick="unnecesary_tripAdd();" class="w3-btn w3-black"> No</a> <!--I created a black yes button that would add to the unnecessary count and direct the user to the sixth page-->
+    </div> 
     
 </div>
 
