@@ -41,15 +41,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	var necessary_trip = 0; //Variable for seeing the dentist.
 	var unnecessary_trip = 0; //Variable for not seeing the dentist.
 	
-	function necessary_tripAdd(){ //function for adding to the necessary trip variable.
-	    necessary_trip = necessary_trip + 1; //Addition to necessary trip variable.
-	        alert("Dental Trip Count: " + yes_trip); //Alert for a necessary dentist visit.
+	function necessarytripAdd(){ //function for adding to the necessary trip variable.
+	    necessary_trip = necessary_trip + 1; //Addition to necessary trip variable. Realized I forgot to change the variable here.
+	        alert("Dental Trip Count: " + necessary_trip); //Alert for a necessary dentist visit.
 	
 	};
 	
-	function unnecessary_tripAdd(){ //function for adding to the unnecessary trip variable.
+	function unnecessarytripAdd(){ //function for adding to the unnecessary trip variable.
 	    unnecessary_trip = unnecessary_trip + 1; //Addition to necessary trip variable.
-	        alert("No Dental Trip Count: " +no_trip); //Alert for unnecessary dental visit.
+	        alert("No Dental Trip Count: " + unnecessary_trip); //Alert for unnecessary dental visit. Realized I forgot to change the variable here.
 	
 	};
 	  
@@ -82,7 +82,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <body> <!--Content that will be displayed.-->
 <div id="header" class="w3-container w3-flat-carrot"> <!--Created a id and class that will display the first page and store information.-->
-    <h1>Should you visit the dentist?></h1> <!--Overall Question of the code.-->
+    <h1>Should you visit the dentist?</h1> <!--Overall Question of the code.-->
+    
 </div>
 
 <div id="content" class="w3-container"> <!--What will be displayed in the first page.-->
@@ -90,7 +91,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     
     <a href="#one" class="w3-btn w3-black w3-round"> Get Started </a> <!--Button to move on to the second page.-->
     
-    <p>The following code has been developed by a student/ researcher of the Freshman Research Initiative DIY Diagnostic Stream at the University of Texas at Austin. This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code. </p> <!--Disclaimers-->
+    <p>The following code has been developed by a student/researcher of the Freshman Research Initiative DIY Diagnostic Stream at the University of Texas at Austin. This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code. </p> <!--Disclaimers-->
 
     <p>THIS CODE SHOULD NOT BE USED AS JUDGEMENT TO NOT SEEK OR SEEK DENTAL TREATMENT</p> <!--Disclaimers-->
 </div>
@@ -110,5 +111,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <div class="page" id="two"> <!--Assigning style class to a div-->
     <div class"w3-container w3-flat-carrot"> <!--Added a div class for the w3 container w3-flat-carrot.-->
         <h1>Question 2</h1> <!--Question 2 header.-->
+
+<footer class="w3-bottom w3-container w3-flat-carrot"> <!--Class for footer.-->
+    <p>DIY Dental Diagnostic App 4</p> <!--Displayed in footer.-->
+</footer>
+
 </body>
 </html>
