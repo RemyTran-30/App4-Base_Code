@@ -48,7 +48,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	};
 	
-	function unnecessarytripAdd(){ //function for adding to the unnecessary trip variable.
+	function unnecessarytripAdd(){ //Function for adding to the unnecessary trip variable.
 	    unnecessary_trip = unnecessary_trip + 1; //Addition to necessary trip variable.
 	        alert("No Dental Trip Count: " + unnecessary_trip); //Alert for unnecessary dental visit. Realized I forgot to change the variable here.
 	
@@ -58,7 +58,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	        var necessary_trip_recommendation = (necessary_trip/4) * 100; //Created a variable for necessary percentage that divides the variable of necessary count by 4 (4 questions) and multiplied by 100 (to get percentage).
 		var unnecessary_trip_recommendation = (unnecessary_trip/4) * 100; //Created a variable for unnecessary percentage that divides the variable of unnecessary count by 4 (4 questions) and multiplied by 100 (to get percentage).
 		var resultText = document.getElementById("recommendation") //Created a variable that stores my results. Captures content of <p id="recommendation"></p>.
-		resultText.innerHTML = "Probability that a dental visit is necessary=" + necessary_trip_recommendation + "<br> Probability that a dental visit is unnecessary =" + unnecessary_trip_recommendation //What is displayed
+		resultText.innerHTML = "Probability that a dental visit is necessary=" + necessary_trip_recommendation + "<br> Probability that a dental visit is unnecessary =" + unnecessary_trip_recommendation //What is displayed in results page.
 	
 	};
 	
@@ -128,7 +128,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         <div id="content" class="w3-container"> <!--JavaScript event-->
         <p>Have you had a dental check-up in the last six months?</p> <!--First question.-->
         <a href="#two" onclick="necessarytripAdd();" class="w3-btn w3-black"> Yes</a> <!--I created a black yes button that would add to the necessary count and direct the user to the third page. Noticed my onclick didn't correspond to the function.-->
-        <a href="#two" onclick="unnecessarytripAdd();" class="w3-btn w3-black"> No</a> <!--I created a black yes button that would add to the unnecessary count and direct the user to the third page. Noticed my onclick didn't correspond to the function.-->
+        <a href="#two" onclick="unnecessarytripAdd();" class="w3-btn w3-black"> No</a> <!--I created a black no button that would add to the unnecessary count and direct the user to the third page. Noticed my onclick didn't correspond to the function.-->
         </div>
 </div>
 
@@ -140,20 +140,20 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
        <div id="content" class="w3-container"> <!--JavaScript event.-->
                <p>Have you noticed any bleeding when brushing or flossing your teeth?</p> <!--Second question.-->
                <a href="#three" onclick="necessarytripAdd();" class="w3-btn w3-black"> Yes</a> <!--I created a black yes button that would add to the necessary count and direct the user to the fourth page. Noticed my onclick didn't correspond to the function.-->
-               <a href="#three" onclick="unnecessarytripAdd();" class="w3-btn w3-black"> No</a> <!--I created a black yes button that would add to the unnecessary count and direct the user to the fourth page. Noticed my onclick didn't correspond to the function.-->
+               <a href="#three" onclick="unnecessarytripAdd();" class="w3-btn w3-black"> No</a> <!--I created a black no button that would add to the unnecessary count and direct the user to the fourth page. Noticed my onclick didn't correspond to the function.-->
        </div> 
     
 </div>
 
 <div class="page" id="three"> <!--Assigning style class to a div-->
-       <div class="w3-container w3-flat-carrot"> <!--Added a div class for the w3 container w3-flat-carrot. For to put a = sign.-->
+       <div class="w3-container w3-flat-carrot"> <!--Added a div class for the w3 container w3-flat-carrot. Forgot to put a = sign.-->
               <h1>Question 3</h1> <!--Question 3 header.-->
        </div>
     
        <div id="content" class="w3-container"> <!--JavaScript event.-->
                <p>Do you have any loose teeth or gaps between your teeth?</p> <!--Third question.-->
                <a href="#four" onclick="necessarytripAdd();" class="w3-btn w3-black"> Yes</a> <!--I created a black yes button that would add to the necessary count and direct the user to the fifth page. Noticed my onclick didn't correspond to the function.-->
-               <a href="#four" onclick="unnecessarytripAdd();" class="w3-btn w3-black"> No</a> <!--I created a black yes button that would add to the unnecessary count and direct the user to the fifth page. Noticed my onclick didn't correspond to the function.-->
+               <a href="#four" onclick="unnecessarytripAdd();" class="w3-btn w3-black"> No</a> <!--I created a black no button that would add to the unnecessary count and direct the user to the fifth page. Noticed my onclick didn't correspond to the function.-->
        </div> 
     
 </div>
@@ -166,12 +166,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
        <div id="content" class="w3-container"> <!--JavaScript event.-->
                <p>Have you experienced any sensitivity to hot or cold foods or drinks?</p> <!--Fourth question.-->
                <a href="#five" onclick="necessarytripAdd();" class="w3-btn w3-black"> Yes</a> <!--I created a black yes button that would add to the necessary count and direct the user to the sixth page. Noticed my onclick didn't correspond to the function.-->
-               <a href="#five" onclick="unnecessarytripAdd();" class="w3-btn w3-black"> No</a> <!--I created a black yes button that would add to the unnecessary count and direct the user to the sixth page. Noticed my onclick didn't correspond to the function.-->
+               <a href="#five" onclick="unnecessarytripAdd();" class="w3-btn w3-black"> No</a> <!--I created a black no button that would add to the unnecessary count and direct the user to the sixth page. Noticed my onclick didn't correspond to the function.-->
        </div>
     
 </div>
 
-<div class="page" id="five"> 
+<div class="page" id="five">  <!--Assigning style class to a div-->
        <div class="w3-container w3-flat-carrot"> <!-- Added a div class for the w3 container w3-flat-carrot. Had a = instead of a -.-->
               <h1>Recommendation</h1> <!--Recommendation header.-->
        </div>
@@ -188,7 +188,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <footer class="w3-bottom w3-container w3-flat-carrot"> <!--Class for footer.-->
     <p>DIY Dental Diagnostic App 4</p> <!--Displayed in footer.-->
-</footer>
+</footer> 
 
 </body>
 </html>
